@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var levelup = require('levelup')
 var leveldown = require('leveldown')
 var subleveldown = require('subleveldown')

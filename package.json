@@ -7,7 +7,7 @@
     "url": "https://github.com/ngoldman/peerbot/issues"
   },
   "bin": {
-    "peerbot": "index.js"
+    "peerbot": "./bin/cli.js"
   },
   "dependencies": {
     "end-of-stream": "^1.1.0",
@@ -19,6 +19,7 @@
     "node-gyp": "^1.0.3",
     "protocol-buffers": "^3.0.0",
     "request": "^2.55.0",
+    "shelljs": "^0.4.0",
     "signalhub": "^3.3.0",
     "silence-chromium": "^1.1.0",
     "single-line-log": "^0.4.1",
@@ -54,8 +55,8 @@
   },
   "scripts": {
     "postinstall": "npm run rebuild-leveldb",
-    "rebuild-leveldb": "cd node_modules/leveldown && HOME=~/.electron-gyp node-gyp rebuild --target=0.25.1 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
-    "start": "electron-spawn . --channel=friends",
+    "rebuild-leveldb": "cd node_modules/leveldown && set HOME=~/.electron-gyp && node-gyp rebuild --target=0.25.1 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
+    "start": "electron-spawn .",
     "test": "standard"
   }
 }
