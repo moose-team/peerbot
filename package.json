@@ -1,13 +1,13 @@
 {
   "name": "peerbot",
   "description": "Message seeding utility for friends p2p chat.",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "MOOSE Team",
-  "bugs": {
-    "url": "https://github.com/ngoldman/peerbot/issues"
-  },
   "bin": {
     "peerbot": "./bin/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/moose-team/peerbot/issues"
   },
   "dependencies": {
     "end-of-stream": "^1.1.0",
@@ -30,7 +30,7 @@
   "devDependencies": {
     "standard": "^3.2.1"
   },
-  "homepage": "https://github.com/ngoldman/peerbot",
+  "homepage": "https://github.com/moose-team/peerbot",
   "keywords": [
     "bot",
     "chat",
@@ -51,7 +51,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngoldman/peerbot.git"
+    "url": "https://github.com/moose-team/peerbot.git"
   },
   "scripts": {
     "postinstall": "npm run rebuild-leveldb",
