@@ -14,7 +14,7 @@ Run this on a server to ensure that there will always be a peer available to con
 
 ## Install
 
-1. Use newest io.js and npm ((`>= 1.8.1`, `>= 2.8.3`).
+1. Use newest io.js and npm (`>= 1.8.1`, `>= 2.8.3`).
 2. Install `electron-prebuilt` & `electron-spawn` globally.
 3. Install `peerbot` globally.
 
@@ -58,13 +58,6 @@ npm install
 npm run rebuild-leveldb
 npm start
 ```
-
-## Todo
-
-* Better command line interface
-  * usage on `-h`/`--help`
-  * version on `-v`/`--version`
-  * better channel specification method
 
 ## Contributing
 
