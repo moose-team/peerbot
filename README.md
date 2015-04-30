@@ -4,7 +4,7 @@
 [![travis][travis-image]][travis-url]
 
 [npm-image]: https://img.shields.io/npm/v/peerbot.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/npm/peerbot
+[npm-url]: https://www.npmjs.com/package/peerbot
 [travis-image]: https://img.shields.io/travis/moose-team/peerbot.svg?style=flat-square
 [travis-url]: https://travis-ci.org/moose-team/peerbot
 
