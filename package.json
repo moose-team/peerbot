@@ -1,14 +1,15 @@
 {
   "name": "peerbot",
   "description": "Message seeding utility for friends p2p chat.",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "MOOSE Team",
+  "bin": {
+    "peerbot": "./bin/cli.js"
+  },
   "bugs": {
-    "url": "https://github.com/ngoldman/peerbot/issues"
+    "url": "https://github.com/moose-team/peerbot/issues"
   },
   "dependencies": {
-    "electron-prebuilt": "^0.25.1",
-    "electron-spawn": "^2.0.1",
     "end-of-stream": "^1.1.0",
     "ghsign": "^1.2.2",
     "hyperlog": "^3.3.1",
@@ -18,6 +19,7 @@
     "node-gyp": "^1.0.3",
     "protocol-buffers": "^3.0.0",
     "request": "^2.55.0",
+    "shelljs": "^0.4.0",
     "signalhub": "^3.3.0",
     "silence-chromium": "^1.1.0",
     "single-line-log": "^0.4.1",
@@ -28,7 +30,7 @@
   "devDependencies": {
     "standard": "^3.2.1"
   },
-  "homepage": "https://github.com/ngoldman/peerbot",
+  "homepage": "https://github.com/moose-team/peerbot",
   "keywords": [
     "bot",
     "chat",
@@ -49,11 +51,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngoldman/peerbot.git"
+    "url": "https://github.com/moose-team/peerbot.git"
   },
   "scripts": {
-    "rebuild-leveldb": "cd node_modules/leveldown && HOME=~/.electron-gyp node-gyp rebuild --target=0.25.1 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
-    "start": "electron-spawn . --channel=friends",
+    "postinstall": "npm run rebuild-leveldb",
+    "rebuild-leveldb": "cd node_modules/leveldown && set HOME=~/.electron-gyp && node-gyp rebuild --target=0.25.1 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
+    "start": "electron-spawn .",
     "test": "standard"
   }
 }
