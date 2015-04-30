@@ -11,7 +11,13 @@ Message seeding utility for [friends](https://github.com/moose-team/friends) p2p
 
 Run this locally or on a server to ensure that there will always be a peer available to connect to for a channel.
 
+:warning: Probably broken! Fixes welcome.
+
 ## Usage
+
+:warning: Hefty downloads ahead!
+
+Ideas and contributions for a better implementation are welcome.
 
 for now...
 
@@ -22,8 +28,6 @@ npm install
 npm rebuild-leveldb
 npm start
 ```
-
-Hefty downloads ahead! Ideas and contributions for a better implementation are welcome.
 
 ## Contributing
 
