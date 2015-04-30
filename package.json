@@ -1,7 +1,7 @@
 {
   "name": "peerbot",
   "description": "Message seeding utility for friends p2p chat.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "MOOSE Team",
   "bin": {
     "peerbot": "./bin/cli.js"
