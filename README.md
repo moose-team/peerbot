@@ -25,7 +25,7 @@ for now...
 git clone git@github.com:ngoldman/peerbot.git
 cd peerbot
 npm install
-npm rebuild-leveldb
+npm run rebuild-leveldb
 npm start
 ```
 
