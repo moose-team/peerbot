@@ -2,8 +2,8 @@
 
 [![travis][travis-image]][travis-url]
 
-[travis-image]: https://img.shields.io/travis/ngoldman/peerbot.svg?style=flat-square
-[travis-url]: https://travis-ci.org/ngoldman/peerbot
+[travis-image]: https://img.shields.io/travis/moose-team/peerbot.svg?style=flat-square
+[travis-url]: https://travis-ci.org/moose-team/peerbot
 
 Message seeding utility for [friends](https://github.com/moose-team/friends) p2p chat.
 
