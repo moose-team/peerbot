@@ -14,14 +14,13 @@ Run this on a server to ensure that there will always be a peer available to con
 
 ## Install
 
+1. Use newest io.js and npm ((`>= 1.8.1`, `>= 2.8.3`).
+2. Install `electron-prebuilt` & `electron-spawn` globally.
+3. Install `peerbot` globally.
+
 ```
 npm install -g peerbot
 ```
-
-### Requirements
-
-1. Use newest io.js and npm ((`>= 1.8.1`, `>= 2.8.3`).
-2. Install `electron-prebuilt` & `electron-spawn` globally.
 
 ## Usage
 
@@ -48,7 +47,7 @@ $ xvfb-run peerbot
 
 Also you [may need to `apt-get install libgconf-2-4`](https://github.com/atom/electron/issues/1518)
 
-## Build and develop locally
+## Build and run peerbot locally
 
 Same requirements as in [Install](#install).
 
@@ -59,6 +58,13 @@ npm install
 npm run rebuild-leveldb
 npm start
 ```
+
+## Todo
+
+* Better command line interface
+  * usage on `-h`/`--help`
+  * version on `-v`/`--version`
+  * better channel specification method
 
 ## Contributing
 
