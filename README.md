@@ -10,19 +10,18 @@
 
 Message seeding utility for [friends](https://github.com/moose-team/friends) p2p chat.
 
-:construction: WORK IN PROGRESS :construction:
-
 Run this on a server to ensure that there will always be a peer available to connect to for a given channel on friends.
 
 ## Install
 
-Newest io.js and npm ((`>= 1.8.1`, `>= 2.8.3`) recommended.
-
-Requires `electron-prebuilt` & `electron-spawn` to be installed globally.
-
 ```
 npm install -g peerbot
 ```
+
+### Requirements
+
+1. Use newest io.js and npm ((`>= 1.8.1`, `>= 2.8.3`).
+2. Install `electron-prebuilt` & `electron-spawn` globally.
 
 ## Usage
 
@@ -40,8 +39,6 @@ You can specify as many channels as you want with multiple `--channel` flags.
 
 ### Running on headless Ubuntu
 
-:warning: *untested*
-
 If you're running `peerbot` on headless Ubuntu, you will need to use `xvfb-run` to create a virtual display so that Chromium can run:
 
 ```
@@ -53,10 +50,10 @@ Also you [may need to `apt-get install libgconf-2-4`](https://github.com/atom/el
 
 ## Build and develop locally
 
-Same global requirements as in [Install](#install).
+Same requirements as in [Install](#install).
 
 ```
-git clone git@github.com:ngoldman/peerbot.git
+git clone git@github.com:moose-team/peerbot.git
 cd peerbot
 npm install
 npm run rebuild-leveldb
