@@ -6,10 +6,27 @@
   "bugs": {
     "url": "https://github.com/ngoldman/peerbot/issues"
   },
+  "dependencies": {
+    "electron-prebuilt": "^0.25.1",
+    "electron-spawn": "^2.0.1",
+    "end-of-stream": "^1.1.0",
+    "ghsign": "^1.2.2",
+    "hyperlog": "^3.3.1",
+    "leveldown": "maxogden/leveldown#newnan",
+    "levelup": "^0.19.0",
+    "minimist": "^1.1.1",
+    "node-gyp": "^1.0.3",
+    "protocol-buffers": "^3.0.0",
+    "request": "^2.55.0",
+    "signalhub": "^3.3.0",
+    "silence-chromium": "^1.1.0",
+    "single-line-log": "^0.4.1",
+    "subleveldown": "^2.0.0",
+    "through2": "^0.6.5",
+    "webrtc-swarm": "^1.2.0"
+  },
   "devDependencies": {
-    "standard": "*",
-    "tap-spec": "^3.0.0",
-    "tape": "^4.0.0"
+    "standard": "^3.2.1"
   },
   "homepage": "https://github.com/ngoldman/peerbot",
   "keywords": [
@@ -35,26 +52,8 @@
     "url": "https://github.com/ngoldman/peerbot.git"
   },
   "scripts": {
-    "start": "electron-spawn . --channel=friends",
     "rebuild-leveldb": "cd node_modules/leveldown && HOME=~/.electron-gyp node-gyp rebuild --target=0.25.1 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
-    "test": "standard && tape test/*.js | tap-spec"
-  },
-  "dependencies": {
-    "electron-prebuilt": "^0.25.1",
-    "electron-spawn": "^2.0.1",
-    "end-of-stream": "^1.1.0",
-    "ghsign": "^1.2.2",
-    "hyperlog": "^3.4.0",
-    "leveldown": "^1.0.2",
-    "levelup": "^0.19.0",
-    "minimist": "^1.1.1",
-    "node-gyp": "^1.0.3",
-    "protocol-buffers": "^3.0.0",
-    "request": "^2.55.0",
-    "signalhub": "^3.4.0",
-    "single-line-log": "^0.4.1",
-    "subleveldown": "^2.0.0",
-    "through2": "^0.6.5",
-    "webrtc-swarm": "^1.2.0"
+    "start": "electron-spawn . --channel=friends",
+    "test": "standard"
   }
 }
