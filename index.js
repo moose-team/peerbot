@@ -1,11 +1,13 @@
 var levelup = require('levelup')
 var leveldown = require('leveldown')
 var subleveldown = require('subleveldown')
-var log = require('single-line-log').stdout
+var _log = require('single-line-log').stdout
 var eos = require('end-of-stream')
 var minimist = require('minimist')
 var Swarm = require('./lib/swarm.js')
-
+var log = function (msg) {
+  _log(msg + '\n')
+}
 module.exports = function (args) {
   var db = levelup('./friendsdb', {db: leveldown})
   db.channels = subleveldown(db, 'channels', {valueEncoding: 'json'})
