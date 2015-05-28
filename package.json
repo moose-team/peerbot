@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "end-of-stream": "^1.1.0",
+    "friends-swarm": "^1.0.0",
     "ghsign": "^1.2.2",
     "hyperlog": "^3.3.1",
     "leveldown": "maxogden/leveldown#newnan",
