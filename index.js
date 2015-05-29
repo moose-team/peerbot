@@ -4,7 +4,7 @@ var subleveldown = require('subleveldown')
 var _log = require('single-line-log').stdout
 var eos = require('end-of-stream')
 var minimist = require('minimist')
-var Swarm = require('./lib/swarm.js')
+var Swarm = require('friends-swarm')
 var log = function (msg) {
   _log(msg + '\n')
 }
