@@ -29,7 +29,7 @@
     "webrtc-swarm": "^1.2.0"
   },
   "devDependencies": {
-    "standard": "^3.2.1"
+    "standard": "*"
   },
   "homepage": "https://github.com/moose-team/peerbot",
   "keywords": [
