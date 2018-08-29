@@ -9,8 +9,8 @@ var log = function (msg) {
   _log(msg + '\n')
 }
 module.exports = function (args) {
-  var db = levelup('./friendsdb', {db: leveldown})
-  db.channels = subleveldown(db, 'channels', {valueEncoding: 'json'})
+  var db = levelup('./friendsdb', { db: leveldown })
+  db.channels = subleveldown(db, 'channels', { valueEncoding: 'json' })
   var swarm = Swarm(subleveldown(db, 'swarm'))
 
   // parse arg string into opts using minimist
